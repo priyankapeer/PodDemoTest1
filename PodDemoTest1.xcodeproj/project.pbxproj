@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5E956D1D218C7B600011E059 /* PodDemoTest1.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E956D1B218C7B600011E059 /* PodDemoTest1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E956D24218C87C90011E059 /* PBMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E956D23218C87C90011E059 /* PBMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E956D18218C7B600011E059 /* PodDemoTest1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PodDemoTest1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E956D1B218C7B600011E059 /* PodDemoTest1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodDemoTest1.h; sourceTree = "<group>"; };
 		5E956D1C218C7B600011E059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E956D23218C87C90011E059 /* PBMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		5E956D1A218C7B600011E059 /* PodDemoTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				5E956D23218C87C90011E059 /* PBMessageView.swift */,
 				5E956D1B218C7B600011E059 /* PodDemoTest1.h */,
 				5E956D1C218C7B600011E059 /* Info.plist */,
 			);
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					5E956D17218C7B600011E059 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E956D24218C87C90011E059 /* PBMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		5E956D21218C7B600011E059 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pbdev.dropdown.PodDemoTest1;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		5E956D22218C7B600011E059 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

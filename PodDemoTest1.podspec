@@ -1,3 +1,5 @@
+
+
 Pod::Spec.new do |s|
 
 # 1
@@ -5,7 +7,7 @@ s.platform = :ios
 
 s.name = "PodDemoTest1"
 s.summary = "PodDemoTest1 lets a user select an ice cream flavor."
-
+s.requires_arc = true
 
 # 2
 s.version = "0.1.0"
@@ -23,17 +25,13 @@ s.homepage = "https://github.com/priyankapeer/PodDemoTest1"
 s.source = { :git => "https://github.com/priyankapeer/PodDemoTest1.git",
 :tag => "0.1.0" }
 
-# 7
+
 s.framework = "UIKit"
 
-
-# 8
 s.source_files = "PodDemoTest1/**/*.{swift}"
 
-# 9
-s.resources = "PodDemoTest1/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-
-
+# 10
+s.swift_version = "4.2"
 
 end
 
